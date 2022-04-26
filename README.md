@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+references
+
+https://material.angular.io/components/form-field/overview
+https://stackblitz.com/edit/angular-8-reactive-form?file=src%2Fapp%2Fapp.component.html
+https://www.techiediaries.com/angular/angular-8-7-tutorial-example-rest-api-httpclient-get-ngfor/
+https://www.djamware.com/post/5b87894280aca74669894414/angular-httpclient-678910-consume-rest-api-example
