@@ -7,8 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  private REST_API_SERVER = "http://localhost:3000";
-
+  private REST_API_SERVER = "http://localhost:8080/";
+  // http://localhost:8080/students/getAll
   constructor(private httpClient: HttpClient) { }
 
   public sendGetRequest(){
@@ -16,6 +16,6 @@ export class DataService {
   }
 
   public sendPostRequest(studentSurvey: any){
-    return this.httpClient.post(this.REST_API_SERVER + "/studentSurvey", {studentSurvey});
+    return this.httpClient.post(this.REST_API_SERVER + "students/addStudent", {studentSurvey});
   }
 }
