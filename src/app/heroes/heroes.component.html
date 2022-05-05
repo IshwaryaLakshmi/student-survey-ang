@@ -1,20 +1,29 @@
 <ul class="heroes">
-    <li *ngFor="let hero of heroes">
-      <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
-        <span class="badge">{{hero.id}}</span>
-        <span class="name">{{hero.name}}</span>
-      </button>
-    </li>
-  </ul>
-  
-  <div *ngIf="selectedHero">
-  
-    <h2>{{selectedHero.name | uppercase}} Details</h2>
-    <div>id: {{selectedHero.id}}</div>
-    <div>
-      <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-    </div>
-  
+  <li *ngFor="let hero of heroes">
+    <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
+      <span class="email">{{hero.email}}</span>
+    </button>
+  </li>
+</ul>
+
+<div *ngIf="selectedHero">
+
+  <h2>{{selectedHero.first_name | uppercase}} Details</h2>
+  <div>email : {{selectedHero.email}}</div>
+  <div>
+    <span class="first_name">First Name: {{selectedHero.first_name}}</span><br>
+    <span class="first_name">Last Name: {{selectedHero.last_name}}</span><br>
+    <span class="first_name">Street Address: {{selectedHero.street_address}}</span><br>
+    <span class="first_name">City: {{selectedHero.city}}</span><br>
+    <span class="first_name">State: {{selectedHero.state}}</span><br>
+    <span class="first_name">Zipcode: {{selectedHero.zipcode}}</span><br>
+    <span class="first_name">Phone: {{selectedHero.phone}}</span><br>
+    <span class="first_name">Date: {{selectedHero.date}}</span><br>
+    <span class="first_name">Comment: {{selectedHero.comment}}</span><br>
   </div>
-  
+
+</div>
+
+
+
+

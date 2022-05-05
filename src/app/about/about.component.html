@@ -4,10 +4,10 @@
         <label>
           <input
             type="text"
-            name="firstName"
+            name="first_name"
             class="form-control"
             placeholder="First Name"
-            formControlName="firstName"
+            formControlName="first_name"
             required
           />
         </label>
@@ -19,7 +19,7 @@
             name="lastName"
             class="form-control"
             placeholder="Last Name"
-            formControlName="lastName"
+            formControlName="last_name"
             required
           />
         </label>
@@ -31,7 +31,7 @@
             name="streetAddress"
             class="form-control"
             placeholder="Street Address"
-            formControlName="streetAddress"
+            formControlName="street_address"
             required
           />
         </label>
@@ -63,7 +63,7 @@
       <div class="form-group">
         <label>
           <input
-            type="text"
+            type="number"
             name="zipcode"
             class="form-control"
             placeholder="Zipcode"
@@ -102,7 +102,7 @@
             type="date"
             name="date"
             class="form-control"
-            placeholder="MM-DD-YYYY"
+            placeholder="DD-MM-YYYY"
             formControlName="date"
             required
           />
@@ -163,7 +163,7 @@
         </p>
         <label>
           <input 
-            formControlName="preferStudents" 
+            formControlName="prefer_students" 
             value="students" 
             type="checkbox" 
             class="input-checkbox"
@@ -171,7 +171,7 @@
         </label>
         <label>
           <input 
-            formControlName="preferLocation" 
+            formControlName="prefer_location" 
             value="location" 
             type="checkbox" 
             class="input-checkbox" 
@@ -179,7 +179,7 @@
         </label>
         <label>
           <input 
-            formControlName="preferCampus" 
+            formControlName="prefer_campus" 
             value="campus" 
             type="checkbox" 
             class="input-checkbox"
@@ -187,7 +187,7 @@
         </label>
         <label>
           <input 
-            formControlName="preferAtmosphere" 
+            formControlName="prefer_atmosphere" 
             value="atmosphere"
             type="checkbox"
             class="input-checkbox"
@@ -195,7 +195,7 @@
         </label>
         <label>
           <input 
-            formControlName="preferDormroom"  
+            formControlName="prefer_dormroom"  
             value="dorm room"  
             type="checkbox"  
             class="input-checkbox"
@@ -203,7 +203,7 @@
         </label>
         <label>
           <input 
-            formControlName="preferSports"  
+            formControlName="prefer_sports"  
             value="sports"  
             type="checkbox"  
             class="input-checkbox" 
@@ -214,7 +214,7 @@
         <p>
           How likely would you recommend George Mason University?
         </p>
-        <select id="most-like" name="mostLike" formControlName="recommendOption" required>        
+        <select id="most-like" name="mostLike" formControlName="recommend_option" required>        
             <option value= "" disabled selected value>Select an option</option>
             <option *ngFor="let recommend of Recommend" [ngValue]="recommend">
               {{ recommend }}
@@ -225,7 +225,7 @@
         <p>Enter random 10 comma separated values between 1 and 100 to win Raffle prizes</p>
         <textarea
           class="input-textarea"
-          formControlName="randomNumber"
+          formControlName="random_number"
           placeholder="1,8,43,76,99,..."
         ></textarea>
       </div>
