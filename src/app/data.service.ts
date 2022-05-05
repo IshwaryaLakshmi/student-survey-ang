@@ -16,7 +16,7 @@ const httpOptions = {
 export class DataService {
   
 
-  private REST_API_SERVER = "http://localhost:8080/";
+  private REST_API_SERVER = "http://ec2-52-87-242-200.compute-1.amazonaws.com:30939/";
   //"http://ec2-54-242-46-150.compute-1.amazonaws.com:8080/";
   // http://localhost:8080/students/getAll
   constructor(private httpClient: HttpClient) { }
