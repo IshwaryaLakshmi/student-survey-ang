@@ -45,9 +45,10 @@ export class AboutComponent implements OnInit {
   onSubmit() {
     console.log('Your form data : ', this.contactForm.value );
     console.log(HERO);
+   
     this.contactForm.value
 
-    this.dataService.sendPostRequest(HERO).subscribe((data: any)=>{
+    this.dataService.sendPostRequest(this.contactForm.value).subscribe((data: any)=>{
       console.log ("Console Log in Post")
       console.log(data);
       

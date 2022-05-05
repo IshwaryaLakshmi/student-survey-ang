@@ -17,6 +17,29 @@ export class DataService {
   }
 
   public sendPostRequest(studentSurvey: any){
+
+    studentSurvey = {
+      "email": "trial85@gmu.edu",
+      "first_name": "George",
+      "last_name": "Mason",
+      "street_address": "1111 Mason Ave",
+      "city": "Fairfax",
+      "state": "VA",
+      "zipcode": 22030,
+      "phone": "9586324175",
+      "date": "2022-05-01",
+      "interested": "School",
+      "recommend_option": "Likely",
+      "random_number": "1,5,3,6,4,2,10,52,69,54",
+      "comment": "nothing",
+      "prefer_atmosphere": true,
+      "prefer_campus": false,
+      "prefer_dormroom": false,
+      "prefer_location": false,
+      "prefer_sports": false,
+      "prefer_students": false,
+      "age": 12
+  };
     return this.httpClient.post(this.REST_API_SERVER + "students/addStudent", {studentSurvey});
   }
 }
