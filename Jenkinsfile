@@ -34,7 +34,7 @@ pipeline{
         }
         stage("DEPLOY & ACTIVATE") {
             steps {
-                bat 'docker run -p80:4200 achudan/studentangular:latest'
+                bat 'docker run -p4200:80 achudan/studentangular:latest'
             }
         }
     }
