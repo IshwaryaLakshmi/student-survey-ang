@@ -8,12 +8,12 @@ pipeline{
     stages {
         stage('INSTALL PACKAGES') {
             steps {
-                sh "npm install"
+                bat "npm install"
             }
         }
         stage('BUILD APP') {
             steps {
-                sh "node_modules/.bin/ng build --prod"
+                bat "node_modules/.bin/ng build --prod"
             }
         }
         stage("BUILD DOCKER") {
@@ -34,7 +34,7 @@ pipeline{
         }
         stage("DEPLOY & ACTIVATE") {
             steps {
-                sh 'docker run -p80:4200 achudan/studentangular:latest'
+                bat 'docker run -p80:4200 achudan/studentangular:latest'
             }
         }
     }
