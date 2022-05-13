@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        registryCredential = 'dockerhubcredentials'
+        registryCredential = 'dockercred'
         registry = 'achudan/studentangular'
     }
     tools {nodejs "71Node"}
